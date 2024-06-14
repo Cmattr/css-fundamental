@@ -1,0 +1,79 @@
+header
+{
+    background-color: bisque;
+    color: royalblue;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+.nav
+{
+    background-color: whitesmoke;
+   text-align: left;
+}
+
+.button
+{
+    background-color: palegoldenrod;
+    border: 2mm ridge color(srgb 64, 113, 115);
+    
+}
+button:hover
+{
+    border: 4mm ridge color(srgb 64, 113, 115); 
+}
+footer
+{
+    background-color: bisque;
+    color: royalblue;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+
+body
+{
+    font-family: Georgia, serif;
+    line-height: 1.6;
+    color: rgb(64, 113, 115);
+    background-color: palegoldenrod;
+}
+
+.title
+{
+    color: rgb(0, 71, 119);
+    text-align: center;
+    font-size: medium;
+    text-decoration: underline;
+}
+.box
+{
+    background-color: whitesmoke;
+    margin: 10px;
+    border: 2px solid rgb(64, 113, 115);
+    padding: 20px;
+    width: 300px;
+    height: 350px;
+}
+
+#instructions
+{
+    margin: 10px;
+    border: 2px solid rgb(64, 113, 115);
+    padding: 20px;
+    width: 650px;
+    height: 100%;
+}
+
+.submission
+{
+    text-align: center;
+    background-color: whitesmoke;
+    margin: 10px;
+    border: 2px solid rgb(64, 113, 115);
+    padding: 20px;
+    width: 80%;
+    height: 350px;
+}

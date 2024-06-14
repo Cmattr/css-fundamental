@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Recipes</title>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width-device-width, initial-scale-1.0">
+        <meta name = "description" content="Welcome to the ever famous cookie_time. Your first choice in deliciousness!">
+        <meta name = "author" content="Matt Richardson">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <img height = 150 width = 100% src="cookie border.jfif" alt="cookies">
+            <p><strong>Cookie Time!!</strong></p>
+            <nav class="nav">
+                <button class="button" onclick="window.location.href='list_and_Recipes.html'">Home</button>
+            </nav>
+        </header>
+        <main>
+            <div class="submission">
+                <h1>Submit Recipe</h1>
+                <p>Here you can submit your own recipe for others to enjoy.</p>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="Name" placeholder="Full name" required aria-required="true">
+                    <br>
+                    <label for="recipe">Recipe:</label>
+                    <br>
+                    <textarea name="recipe" id="recipe" rows="10" cols="100"></textarea>
+                    <input class="button" type="button" value="submit" onclick="pr()">
+                </form>
+            </div>
+            <div id="result" class="submission" style="display: none;">
+                <h2>Submitted Recipe</h2>
+                <p id="resultName"></p>
+                <p id="resultRecipe"></p>
+            </div>
+            <script>
+                function pr() {
+                    // Get the form data
+                    const name = document.getElementById('name').value;
+                    const recipe = document.getElementById('recipe').value;
+        
+                    // Display the form data
+                    document.getElementById('resultName').innerText = `Name: ${name}`;
+                    document.getElementById('resultRecipe').innerText = `Recipe: ${recipe}`;
+                    document.getElementById('result').style.display = 'block';
+                }
+            </script>
+        </main>
+        <footer>
+            <p>Don't forget to enjoy your Class Chocolate Chip Cookies with a tall glass of milk &ndash; the perfect combination!</p><!--&ndash special character for '-' -->
+        </footer>
+    </body>
+    
